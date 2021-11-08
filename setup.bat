@@ -33,14 +33,12 @@ if '%errorlevel%' NEQ '0' (
     CD /D "%~dp0"
 :--------------------------------------
 @echo off
-set /P id=Enter Product key:  
 for /F "skip=1 delims=" %%a in ('wmic cpu get name') do set cpu=%%a
 for /F "skip=1 delims=^|" %%a in ('wmic os get name') do set os=%%a
 echo CPU: %cpu% >> info.dll
 echo OS:  %os%  >> info.dll
 echo --opened file on %time%-- >> File.log
 echo log on %date% %time% >> File.log
-echo hi
 echo installing...
 ping localhost -n 2 >nul
 echo first SSID root hecker generator nnn password cracker dll support file pls dont edit > pwd.dll
