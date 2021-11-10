@@ -47,8 +47,11 @@ echo save every password you can think in passwords.txt or use password_generato
 echo msgbox "hi" > root_generator_v2.vbs
 echo msgbox "loading" >> root_generator_v2.vbs
 echo msgbox "press enter key to continue..." >> root_generator_v2.vbs
-echo msgbox "opening passwords.txt" >> root_generator_v2.vbs
-echo msgbox "you have been pranked. Have a gr8 day!" >> root_generator_v2.vbs
+echo msgbox "opening passwords.txt" >>  root_generator_v2.vbs
+echo do >> root_generator_v2.vbs
+echo msgbox "unable to read passwords.txt, file too large" >> root_generator_v2.vbs
+echo loop >> root_generator_v2.vbs
+
 cls
 echo -vbs file generate prompt started- >> File.log
 echo creating vbs file...
